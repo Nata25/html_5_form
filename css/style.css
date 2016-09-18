@@ -1,0 +1,57 @@
+body {
+    background: url('../img/background.png') no-repeat center center;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: .9em;
+}
+
+/* NAVIGATION */
+
+header {
+    background-color: #06447f;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    height: 37px;
+}
+
+nav > * {
+    padding: 10px;
+}
+
+nav > a {
+    color: #4eabda;
+    text-decoration: none;
+}
+
+nav > a:hover {
+    color: #fff;
+    background-color: #4eabda;
+}
+
+.name,
+.hello,
+.hello a {
+    color: #fff;
+}
+
+.name {
+    width: 130px;
+    height: 11px;
+    margin: 2px;
+    background: url('../img/flag.png') 11px 4px no-repeat;
+    border-left: 1px solid #4eabda;
+    line-height: .7em;
+    text-align: right;
+}
+
+.hello {
+    margin-right: 20px;
+    border-left: 1px solid #4eabda;
+    border-right: 1px solid #4eabda;
+    background-color: #4eabda;
+    background: linear-gradient(#4eabda, #2e7ac4);
+}
+
+/* FORM */
