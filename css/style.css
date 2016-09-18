@@ -1,6 +1,15 @@
+@font-face {
+    font-family: 'Helvetica Neue Thin';
+    src: url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-thin-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    background: url('../img/background.png') no-repeat center center;
-    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #e3eff5;
+    background: #e3eff5 url('../img/background.png') no-repeat center center;
+    font-family: 'Helvetica Neue Thin', 'Helvetica Neue', sans-serif;
     font-size: .9em;
 }
 
@@ -13,7 +22,9 @@ header {
 nav {
     display: flex;
     justify-content: flex-end;
+    width: 1250px;
     height: 37px;
+    margin: 0 auto;
 }
 
 nav > * {
@@ -30,15 +41,13 @@ nav > a:hover {
     background-color: #4eabda;
 }
 
-.white-text {
+.white {
     color: #fff;
 }
 
-/*.name,
-.hello,
-.hello a {
-    color: #fff;
-}*/
+.lightgrey {
+    color: #cccccc;
+}
 
 .name {
     width: 130px;
@@ -62,9 +71,24 @@ nav > a:hover {
 
 main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 1000px;
+}
+
+h1,
+form {
+    width: 565px;
+    background-color: rgba(4, 6, 4, .63);
+}
+
+h1 {
+    margin: 2px auto;
+    padding: 19px;
+    box-sizing: border-box;
+    font-size: 1.6em;
+    text-align: center;
 }
 
 form {
@@ -72,12 +96,95 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 565px;
     height: 665px;
-    background-color: #040604;
-    opacity: .6;
+
 }
 
 form > * {
-    width: 260px;
+    position: relative;
+    width: 276px;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.facebook {
+    height: 35px;
+    border: none;
+    background: url('../img/facebook.png');
+    cursor: pointer;
+}
+
+.divider {
+    color: #999999;
+    text-align: center;
+}
+
+.divider::before,
+.divider::after {
+    position: absolute;
+    top: 17px;
+    width: 120px;
+    border-top: 1px solid #7A7979;
+    box-shadow: 0 1px 0px 0px #000;
+    content: '';
+}
+
+.divider::before {
+    left: 0px;
+}
+
+.divider::after {
+    right: 0;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #3f3e3e;
+    background-color: #100f0f;
+    font-family: "Helvetica Neue Thin", 'Helvetica Neue', sans-serif;
+    font-size: 1em;
+}
+
+input:focus,
+.active {
+    border: 1px solid #689bcc;
+    background-color: #1b5288;
+    background: linear-gradient(#1f4b76, #1b5288 40%);
+    box-shadow: 0 0 20px 1px #4eabda;
+}
+
+::-webkit-input-placeholder {
+    color: #cccccc;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: #cccccc;
+}
+
+:-ms-input-placeholder {
+    color: #cccccc;
+}
+
+/*input[type=checkbox]::before {
+    content: '../img/flag.png';
+}*/
+
+input[type=submit] {
+    width: 160px;
+    background: #3a8ecd linear-gradient(#4faddb, #2e7ac4);
+    border-radius: 5px;
+    border-top: 1px solid #67c6e6;
+    border-bottom: 1px solid #3686ca;
+    border-left: 1px solid #53a0db;
+    border-right: 1px solid #53a0db;
+    color: #fff;
+    cursor: pointer;
+}
+
+.note {
+    margin-top: 0;
+    font-size: .8em;
+    text-align: center;
+    line-height: 1.4em;
 }
