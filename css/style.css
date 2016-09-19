@@ -93,7 +93,7 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 665px;
+    height: 550px;
 
 }
 
@@ -105,7 +105,7 @@ form label {
 form > * {
     position: relative;
     width: 276px;
-    margin: 10px;
+    margin: 8px;
     padding: 10px;
     box-sizing: border-box;
 }
@@ -177,8 +177,8 @@ form > * {
 
 input {
     border: 1px solid #100f0f;
-    border-bottom-color: #3f3e3e;
-    background-color: #100f0f;
+    border-bottom-color: #3e3f3e;
+    background-color: #000;
     font-family: "Helvetica Neue Thin", 'Helvetica Neue', sans-serif;
     font-size: 1em;
 }
@@ -205,6 +205,11 @@ input:focus {
 
 .custom-checkbox:checked::before {
     display: none;
+}
+
+label,
+.custom-submit {
+    margin-top: 0;
 }
 
 .custom-submit {
