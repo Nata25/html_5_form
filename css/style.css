@@ -117,8 +117,8 @@ form > * {
     border: 1px solid #7789bb;
     border-right: 0;
     border-left: 0;
-    border-bottom-color: #2a3b63;
     border-radius: 3px;
+    border-bottom-color: #2a3b63;
     background: #3b5699 linear-gradient(#3b5699, #334164);
     font-size: 1em;
     line-height: 1em;
@@ -133,19 +133,19 @@ form > * {
 }
 
 .facebook::before {
-    width: 32px;
-    height: 95px;
     top: -43px;
     left: 15px;
+    width: 32px;
+    height: 95px;
     border-right: 1px solid #203b70;
     box-shadow: 1px 0 0 0 #4c68a9;
 }
 
 .facebook::after {
-    width: 10px;
-    height: 10px;
     top: -73px;
     left: 250px;
+    width: 10px;
+    height: 10px;
 }
 
 .login {
@@ -191,14 +191,14 @@ input:focus {
 
 .custom-checkbox {
     position: relative;
-    width: 15px;
-    height: 15px;
+    width: 13px;
+    height: 13px;
     overflow: hidden;
 }
 
 .custom-checkbox::before {
     position: absolute;
-    top: -29px;
+    top: -30px;
     left: 1px;
     content: url('../img/sprite.png');
 }
@@ -207,7 +207,7 @@ input:focus {
     display: none;
 }
 
-label,
+label
 .custom-submit {
     margin-top: 0;
 }
