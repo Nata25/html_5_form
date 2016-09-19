@@ -191,8 +191,8 @@ input:focus {
 
 .custom-checkbox {
     position: relative;
-    width: 14px;
-    height: 14px;
+    width: 15px;
+    height: 15px;
     overflow: hidden;
     visibility: hidden;
 }
@@ -203,14 +203,15 @@ input:focus {
 
 .custom-checkbox::before {
     position: absolute;
-    top: -32px;
+    top: -30px;
     left: 1px;
     content: url('../img/sprite.png');
     visibility: visible;
 }
 
 .custom-checkbox:checked::before {
-    display: none;
+    /*display: none;*/
+    opacity: .1;
 }
 
 label
