@@ -7,7 +7,6 @@
 }
 
 body {
-    background-color: #e3eff5;
     background: #e3eff5 url('../img/background.png') no-repeat center center;
     font-family: 'Helvetica Neue Thin', 'Helvetica Neue', sans-serif;
     font-size: .9em;
@@ -52,18 +51,17 @@ h1 {
     width: 130px;
     height: 11px;
     margin: 2px;
-    background: url('../img/flag.png') 11px 4px no-repeat;
     border-left: 1px solid #4eabda;
+    background: url('../img/flag.png') 11px 4px no-repeat;
     line-height: .7em;
     text-align: right;
 }
 
 .hello {
     margin-right: 20px;
-    border-left: 1px solid #4eabda;
     border-right: 1px solid #4eabda;
-    background-color: #4eabda;
-    background: linear-gradient(#4eabda, #2e7ac4);
+    border-left: 1px solid #4eabda;
+    background: #4eabda linear-gradient(#4eabda, #2e7ac4);
 }
 
 /* FORM */
@@ -71,8 +69,8 @@ h1 {
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     height: 1000px;
 }
 
@@ -85,9 +83,9 @@ form {
 h1 {
     margin: 2px auto;
     padding: 19px;
-    box-sizing: border-box;
     font-size: 1.6em;
     text-align: center;
+    box-sizing: border-box;
 }
 
 form {
@@ -101,7 +99,7 @@ form {
 
 form > *,
 form label {
-    color: #cccccc;
+    color: #ccc;
 }
 
 form > * {
@@ -114,13 +112,13 @@ form > * {
 
 .facebook {
     height: 35px;
-    border: none;
+    border: 0;
     background: url('../img/facebook.png');
     cursor: pointer;
 }
 
 .divider {
-    color: #999999;
+    color: #999;
     text-align: center;
 }
 
@@ -130,7 +128,7 @@ form > * {
     top: 17px;
     width: 120px;
     border-top: 1px solid #7a7979;
-    box-shadow: 0 1px 0px 0px #000;
+    box-shadow: 0 1px 0 0 #000;
     content: '';
 }
 
@@ -143,7 +141,7 @@ form > * {
 }
 
 input {
-    border: none;
+    border: 0;
     border-bottom: 1px solid #3f3e3e;
     background-color: #100f0f;
     font-family: "Helvetica Neue Thin", 'Helvetica Neue', sans-serif;
@@ -152,29 +150,28 @@ input {
 
 input:focus {
     border: 1px solid #689bcc;
-    background-color: #1b5288;
-    background: linear-gradient(#1f4b76, #1b5288 40%);
+    background: #1b5288 linear-gradient(#1f4b76, #1b5288 40%);
     box-shadow: 0 0 20px 1px #4eabda;
 }
 
-input[type=checkbox]::before {
+.custom-checkbox::before {
     content: url('../img/checkbox.png');
 }
 
-input[type=checkbox]:checked::before {
+.custom-checkbox:checked::before {
     display: none;
 }
 
-input[type=submit] {
+.custom-submit {
     width: 160px;
-    background: #3a8ecd linear-gradient(#4faddb, #2e7ac4);
-    border-radius: 5px;
     border-width: 1px;
     border-style: solid;
+    border-radius: 5px;
     border-top-color: #67c6e6;
+    border-right-color: #53a0db;
     border-bottom-color: #3686ca;
     border-left-color: #53a0db;
-    border-right-color: #53a0db;
+    background: #3a8ecd linear-gradient(#4faddb, #2e7ac4);
     color: #fff;
     cursor: pointer;
 }
@@ -183,6 +180,6 @@ input[type=submit] {
     width: 340px;
     margin-top: 0;
     font-size: .8em;
-    text-align: center;
     line-height: 1.4em;
+    text-align: center;
 }
