@@ -21,7 +21,7 @@ header {
 nav {
     display: flex;
     justify-content: flex-end;
-    width: 1250px;
+    width: 90%;
     height: 37px;
     margin: 0 auto;
 }
@@ -48,17 +48,16 @@ h1 {
 }
 
 .name {
-    width: 130px;
+    width: 125px;
     height: 11px;
     margin: 2px;
     border-left: 1px solid #4eabda;
-    background: url('../img/flag.png') 11px 4px no-repeat;
+    background: url('../img/sprite.png') 11px 4px no-repeat;
     line-height: .7em;
     text-align: right;
 }
 
 .hello {
-    margin-right: 20px;
     border-right: 1px solid #4eabda;
     border-left: 1px solid #4eabda;
     background: #4eabda linear-gradient(#4eabda, #2e7ac4);
@@ -154,8 +153,18 @@ input:focus {
     box-shadow: 0 0 20px 1px #4eabda;
 }
 
+.custom-checkbox {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    overflow: hidden;
+}
+
 .custom-checkbox::before {
-    content: url('../img/checkbox.png');
+    position: absolute;
+    top: -29px;
+    left: 1px;
+    content: url('../img/sprite.png');
 }
 
 .custom-checkbox:checked::before {
