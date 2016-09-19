@@ -191,16 +191,22 @@ input:focus {
 
 .custom-checkbox {
     position: relative;
-    width: 13px;
-    height: 13px;
+    width: 14px;
+    height: 14px;
     overflow: hidden;
+    visibility: hidden;
+}
+
+.custom-checkbox:checked {
+    visibility: visible;
 }
 
 .custom-checkbox::before {
     position: absolute;
-    top: -30px;
+    top: -32px;
     left: 1px;
     content: url('../img/sprite.png');
+    visibility: visible;
 }
 
 .custom-checkbox:checked::before {
