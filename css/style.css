@@ -43,7 +43,8 @@ nav > a:hover,
 .name,
 .hello,
 .hello > a,
-h1 {
+h1,
+.facebook {
     color: #fff;
 }
 
@@ -110,10 +111,45 @@ form > * {
 }
 
 .facebook {
+    position: relative;
     height: 35px;
-    border: 0;
-    background: url('../img/facebook.png');
+    padding-left: 34px;
+    border: 1px solid #7789bb;
+    border-right: 0;
+    border-left: 0;
+    border-bottom-color: #2a3b63;
+    border-radius: 3px;
+    background: #3b5699 linear-gradient(#3b5699, #334164);
+    font-size: 1em;
+    line-height: 1em;
     cursor: pointer;
+    overflow: hidden;
+}
+
+.facebook::before,
+.facebook::after {
+    position: absolute;
+    content: url('../img/sprite.png');
+}
+
+.facebook::before {
+    width: 32px;
+    height: 95px;
+    top: -43px;
+    left: 15px;
+    border-right: 1px solid #203b70;
+    box-shadow: 1px 0 0 0 #4c68a9;
+}
+
+.facebook::after {
+    width: 10px;
+    height: 10px;
+    top: -73px;
+    left: 250px;
+}
+
+.login {
+    font-weight: bold;
 }
 
 .divider {
