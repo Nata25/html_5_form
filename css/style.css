@@ -154,21 +154,19 @@ input:focus,
     box-shadow: 0 0 20px 1px #4eabda;
 }
 
-::-webkit-input-placeholder {
-    color: #cccccc;
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-    color: #cccccc;
-}
-
+::-webkit-input-placeholder,
+::-moz-placeholder,
 :-ms-input-placeholder {
     color: #cccccc;
 }
 
-/*input[type=checkbox]::before {
-    content: '../img/flag.png';
-}*/
+input[type=checkbox]::before {
+    content: url('../img/checkbox.png');
+}
+
+input[type=checkbox]:checked::before {
+    display: none;
+}
 
 input[type=submit] {
     width: 160px;
