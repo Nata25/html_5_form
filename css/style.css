@@ -37,16 +37,15 @@ nav > a {
 }
 
 nav > a:hover {
-    color: #fff;
     background-color: #4eabda;
 }
 
-.white {
+nav > a:hover,
+.name,
+.hello,
+.hello > a,
+h1 {
     color: #fff;
-}
-
-.lightgrey {
-    color: #cccccc;
 }
 
 .name {
@@ -100,6 +99,11 @@ form {
 
 }
 
+form > *,
+form label {
+    color: #cccccc;
+}
+
 form > * {
     position: relative;
     width: 276px;
@@ -125,13 +129,13 @@ form > * {
     position: absolute;
     top: 17px;
     width: 120px;
-    border-top: 1px solid #7A7979;
+    border-top: 1px solid #7a7979;
     box-shadow: 0 1px 0px 0px #000;
     content: '';
 }
 
 .divider::before {
-    left: 0px;
+    left: 0;
 }
 
 .divider::after {
@@ -146,18 +150,11 @@ input {
     font-size: 1em;
 }
 
-input:focus,
-.active {
+input:focus {
     border: 1px solid #689bcc;
     background-color: #1b5288;
     background: linear-gradient(#1f4b76, #1b5288 40%);
     box-shadow: 0 0 20px 1px #4eabda;
-}
-
-::-webkit-input-placeholder,
-::-moz-placeholder,
-:-ms-input-placeholder {
-    color: #cccccc;
 }
 
 input[type=checkbox]::before {
@@ -172,15 +169,18 @@ input[type=submit] {
     width: 160px;
     background: #3a8ecd linear-gradient(#4faddb, #2e7ac4);
     border-radius: 5px;
-    border-top: 1px solid #67c6e6;
-    border-bottom: 1px solid #3686ca;
-    border-left: 1px solid #53a0db;
-    border-right: 1px solid #53a0db;
+    border-width: 1px;
+    border-style: solid;
+    border-top-color: #67c6e6;
+    border-bottom-color: #3686ca;
+    border-left-color: #53a0db;
+    border-right-color: #53a0db;
     color: #fff;
     cursor: pointer;
 }
 
 .note {
+    width: 340px;
     margin-top: 0;
     font-size: .8em;
     text-align: center;
