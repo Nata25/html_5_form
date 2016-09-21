@@ -22,7 +22,7 @@ header {
 nav {
     display: flex;
     justify-content: flex-end;
-    width: 95%;
+    width: 60%;
     height: 37px;
     margin: 0 auto;
 }
@@ -59,10 +59,19 @@ h1,
     text-align: right;
 }
 
+.name:hover {
+    background-color: transparent;
+    color: #4eabda;
+}
+
 .hello {
     border-right: 1px solid #4eabda;
     border-left: 1px solid #4eabda;
     background: linear-gradient(#4eabda, #2e7ac4);
+}
+
+.hello > a:hover {
+    text-decoration: none;
 }
 
 /* FORM */
