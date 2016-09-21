@@ -7,7 +7,8 @@
 }
 
 body {
-    background: #e3eff5 url('../img/background.png') no-repeat center center;
+    background: #e3eff5 url('../img/background.png') no-repeat center;
+    background-size: cover;
     font-family: 'Helvetica Neue Thin', 'Helvetica Neue', sans-serif;
     font-size: .9em;
 }
@@ -61,7 +62,7 @@ h1,
 .hello {
     border-right: 1px solid #4eabda;
     border-left: 1px solid #4eabda;
-    background: #4eabda linear-gradient(#4eabda, #2e7ac4);
+    background: linear-gradient(#4eabda, #2e7ac4);
 }
 
 /* FORM */
